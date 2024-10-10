@@ -61,9 +61,9 @@ public class NotificationVerticle extends AbstractVerticle {
         });
 
         // Iniciar el servidor HTTP en el puerto 8081
-        vertx.createHttpServer().requestHandler(router).listen(8081, http -> {
+        vertx.createHttpServer().requestHandler(router).listen(8888, http -> {
             if (http.succeeded()) {
-                System.out.println("Servidor de notificaciones iniciado en el puerto 8081");
+                System.out.println("Servidor de notificaciones iniciado en el puerto 8888");
             } else {
                 System.out.println("Error al iniciar el servidor de Vert.x");
             }
